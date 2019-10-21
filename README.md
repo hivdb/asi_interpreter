@@ -13,7 +13,7 @@ guide patient care.
 # ASI Interpreter - HIVDB forked version
 
 [![Travis CI](https://api.travis-ci.org/hivdb/asi_interpreter.svg?branch=1.5.0.1_gradle)](https://travis-ci.org/hivdb/asi_interpreter)
-[![codecov](https://codecov.io/gh/hivdb/asi_interpreter/branch/1.5.0.1_gradle/graph/badge.svg)](https://codecov.io/gh/hivdb/asi_interpreter)
+[![codecov](https://codecov.io/gh/hivdb/asi_interpreter/branch/1.5.0.1_gradle/graph/badge.svg)](https://codecov.io/gh/hivdb/asi_interpreter/branch/1.5.0.1_gradle)
 
 The HIVDB team forked version of ASI Interpreter replaced the Java
 build system to Gradle, which allows multi-project builds used by
