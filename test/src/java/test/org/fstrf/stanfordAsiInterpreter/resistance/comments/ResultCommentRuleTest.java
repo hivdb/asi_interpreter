@@ -62,7 +62,7 @@ public class ResultCommentRuleTest extends TestCase
 	 */
 	public void testComparisons() throws FileNotFoundException, Exception {
 		AsiTransformer transformer = new XmlAsiTransformer(true);
-    	InputStream algorithmFileStream = LevelRuleTest.class.getClassLoader().getResourceAsStream("result_based_comments/ComparisonTest.xml");
+    	InputStream algorithmFileStream = ResultCommentRuleTest.class.getClassLoader().getResourceAsStream("result_based_comments/ComparisonTest.xml");
     	Map<String,Gene> geneMap = transformer.transform(algorithmFileStream);
     	Gene gene = geneMap.get("PR");
     	List<String> mutations = Arrays.asList("20T");
@@ -127,7 +127,7 @@ public class ResultCommentRuleTest extends TestCase
 	 */
 	public void testMultipleComparisons() throws FileNotFoundException, Exception {
 		AsiTransformer transformer = new XmlAsiTransformer(true);
-    	InputStream algorithmFileStream = LevelRuleTest.class.getClassLoader().getResourceAsStream("result_based_comments/ComplexResultComments.xml");
+    	InputStream algorithmFileStream = ResultCommentRuleTest.class.getClassLoader().getResourceAsStream("result_based_comments/ComplexResultComments.xml");
     	Map<String,Gene> geneMap = transformer.transform(algorithmFileStream);
     	Gene gene = geneMap.get("PR");
     	List<String> mutations = Arrays.asList("10F","33F","88S","90M");
@@ -178,7 +178,7 @@ public class ResultCommentRuleTest extends TestCase
 	 */
 	public void testOR() throws FileNotFoundException, Exception {
 		AsiTransformer transformer = new XmlAsiTransformer(true);
-    	InputStream algorithmFileStream = LevelRuleTest.class.getClassLoader().getResourceAsStream("result_based_comments/ComplexResultComments.xml");
+    	InputStream algorithmFileStream = ResultCommentRuleTest.class.getClassLoader().getResourceAsStream("result_based_comments/ComplexResultComments.xml");
     	Map<String,Gene> geneMap = transformer.transform(algorithmFileStream);
     	Gene gene = geneMap.get("PR");
     	List<String> mutations = Arrays.asList("10F","33F","88S","90M");
