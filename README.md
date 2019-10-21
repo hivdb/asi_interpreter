@@ -10,8 +10,18 @@ guide patient care.
 
 -----------------------------------------------------------------------
 
-Purpose
-=======
+# ASI Interpreter - HIVDB forked version
+
+[![Travis CI](https://api.travis-ci.org/hivdb/asi_interpreter.svg?branch=1.5.0.1_gradle)](https://travis-ci.org/hivdb/asi_interpreter)
+[![codecov](https://codecov.io/gh/hivdb/asi_interpreter/branch/1.5.0.1_gradle/graph/badge.svg)](https://codecov.io/gh/hivdb/asi_interpreter)
+
+The HIVDB team forked version of ASI Interpreter replaced the Java
+build system to Gradle, which allows multi-project builds used by
+[Sierra](https://github.com/hivdb/sierra) project. We also added the
+support of Travis CI and CodeCov for better quality control.
+
+
+## Purpose
 
 The ASI (Algorithm Specification Interface) Interpreter allows viral
 drug resistance calculations to be made using a variety of different
@@ -20,8 +30,7 @@ returns resistance interpretations calculated according to that
 specific algorithm, and associated results, as output. 
 
 
-Requirements
-============
+## Requirements
 
 The ASI Interpreter is a platform-independent Java library, not a
 standalone application. 
@@ -36,11 +45,11 @@ The ASI Interpreter requires the following additional libraries:
 
 The ASI Interpreter requires JRE 1.7 or higher.
 
-Background
-==========
+A full list of requirements can be found in [build.gradle](build.gradle).
 
-Approach
---------
+## Background
+
+### Approach
 
 ASI is a common platform developed by Frontier Science & Technology 
 Research Foundation and Robert Shafer's team at Stanford (creators 
@@ -62,8 +71,7 @@ flexible enough to express an enormous variety of possible rules for
 calculating resistance (or other results that can be calculated on the
 basis of viral mutations).
 
-Workflow
---------
+### Workflow
 
 The ASI Library takes as input an algorithm file and a list of 
 mutations for sequence/gene combinations. The ASI Interpreter checks 
@@ -81,8 +89,7 @@ results, and a set of resistance definitions. For each condition
 defined in the algorithm file for a particular drug, the condition 
 is pre-compiled into an ASI syntax tree (see below) for analysis. 
 
-Syntax Trees
-------------
+### Syntax Trees
 
 The ASI Interpreter uses [SableCC](http://www.sablecc.org/) as a
 grammar compiler to process conditional statements. Using a grammar
