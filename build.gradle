@@ -10,7 +10,7 @@ plugins {
 }
 
 group = 'java.org.fstrf.stanfordAsiInterpreter.resistance'
-version = '1.4.0.0-hivdb1'
+version = '1.5.0.1-hivdb2'
 
 sourceCompatibility = 1.7
 targetCompatibility = 1.7
@@ -35,7 +35,7 @@ dependencies {
     implementation 'jaxen:jaxen:1.1'
 
     // https://mvnrepository.com/artifact/junit/junit
-    testImplementation 'junit:junit:3.8.1'
+    testImplementation 'junit:junit:4.12'
 }
 
 jacocoTestReport {
